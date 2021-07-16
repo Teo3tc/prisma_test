@@ -3,6 +3,7 @@
 Make with Vite js
 
 SCSS for the style (Bootstrap home made) + Purge
+
 JS Vanilla
 
 ## Install
