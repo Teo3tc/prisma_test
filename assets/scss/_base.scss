@@ -15,19 +15,32 @@ img{
 a{
     font-size: 2.5em;
     color: white;
+    @include min1024(){
+        font-size: 0.8em;
+    }
 }
 p{
     font-size: 3.2em;
+    @include min1024(){
+        font-size: 1.2em;
+    }
 }
+
 h2{
     line-height: 0.9;
     font-size: 6.3em;
+    @include min1024(){
+        font-size: 2.1em;
+
+    }
 }
 #header{
     position: fixed;
     //z-index: 2;
     background: rgba(0,0,0,0.8);
-
+    @include min1024(){
+        z-index: 3;
+    }
 }
 #menu-btn__open{
     opacity: 0;
@@ -38,6 +51,21 @@ h2{
     z-index: -1;
 }
 #menu{
+    align-content: center;
+    justify-content: center;
+    list-style: none;
+    color: white;
+    font-size: 0.9em;
+    column-gap: 2em;
+    margin: 0.8em 0;
+    font-weight: bold;
+    text-align: center;
+
+    & li:hover,li:focus{
+        text-decoration: underline;
+    }
+}
+#menu_mob{
     width: 100vw; 
     height: 100vh; 
     position: absolute; 
@@ -54,7 +82,7 @@ h2{
     z-index: -1;
     visibility: hidden;
 
-    li:hover,li:focus{
+    & li:hover,li:focus{
         text-decoration: underline;
     }
 }
@@ -69,6 +97,9 @@ h2{
     height: 60vh;
     @include min768(){
         height: 80vh;
+    }
+    @include min1024(){
+        height: fit-content;
     }
     & img{
         object-fit: cover;

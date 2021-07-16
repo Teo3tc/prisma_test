@@ -84,7 +84,10 @@ SOFTWARE.
     display: grid;
     grid-template: auto/repeat(3, 1fr);
 }
-
+.grid-fuild-6auto {
+    display: grid;
+    grid-template: auto/repeat(6, auto);
+}
 .grid-fuild-7 {
     display: grid;
     grid-template: auto/repeat(7, 14.28%);
