@@ -1,0 +1,17 @@
+{
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "postcss": "^8.3.5",
+    "sass": "^1.35.2",
+    "vite": "^2.4.2"
+  },
+  "dependencies": {
+    "lazysizes": "^5.3.2"
+  }
+}
